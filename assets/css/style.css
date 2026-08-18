@@ -176,7 +176,8 @@ strong { color: var(--ink); font-weight: 600; }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-6); width: 100%; }
 
 .brand { display: flex; align-items: center; font-weight: 700; color: var(--ink); flex-shrink: 0; }
-.brand-mark-img { height: 32px; width: auto; flex-shrink: 0; display: block; }
+.brand-mark-img { height: 46px; width: auto; flex-shrink: 0; display: block; }
+.footer-brand .brand-mark-img { height: 50px; }
 
 .main-nav { display: flex; }
 .main-nav ul { display: flex; align-items: center; gap: var(--sp-6); }
@@ -479,12 +480,22 @@ strong { color: var(--ink); font-weight: 600; }
 }
 
 @media (max-width: 960px) {
-  .main-nav { position: fixed; inset: var(--header-h) 0 0 0; background: var(--white); padding: var(--sp-6); transform: translateY(-8px); opacity: 0; pointer-events: none; transition: opacity var(--dur-s) var(--ease), transform var(--dur-s) var(--ease); overflow-y: auto; }
-  .main-nav.is-open { opacity: 1; transform: translateY(0); pointer-events: auto; }
-  .main-nav ul { flex-direction: column; align-items: flex-start; gap: var(--sp-2); width: 100%; }
+  .main-nav {
+    display: block;
+    position: fixed; top: var(--header-h); left: 0; right: 0; bottom: 0;
+    height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h));
+    background: var(--white); padding: var(--sp-6);
+    z-index: 150;
+    transform: translateY(-8px); opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity var(--dur-s) var(--ease), transform var(--dur-s) var(--ease), visibility 0s linear var(--dur-s);
+    overflow-y: auto; -webkit-overflow-scrolling: touch;
+    -webkit-transform: translateY(-8px);
+  }
+  .main-nav.is-open { opacity: 1; transform: translateY(0); visibility: visible; pointer-events: auto; transition: opacity var(--dur-s) var(--ease), transform var(--dur-s) var(--ease); }
+  .main-nav ul { display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-2); width: 100%; }
   .main-nav a { display: block; width: 100%; padding: var(--sp-4) 0; font-size: 1.15rem; border-bottom: 1px solid var(--border-soft); }
   .main-nav a::after { display: none; }
-  .main-nav .nav-cta { display: block; margin-top: var(--sp-5); }
+  .main-nav .nav-cta { display: block; width: 100%; margin-top: var(--sp-5); padding-bottom: var(--sp-6); }
   .nav-toggle { display: flex; }
   .header-actions .btn-primary.header-cta { display: none; }
 

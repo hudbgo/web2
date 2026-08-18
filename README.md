@@ -22,6 +22,17 @@ assets/
 
 Cada página HTML es autocontenida (header y footer duplicados a propósito, sin build system) para mantener el sitio 100% estático y rápido.
 
+## Actualizar logo o favicon sin problemas de caché
+
+`logo.png` y `favicon.ico` se referencian en cada página con un parámetro de versión: `assets/img/logo.png?v=1`. Si subes un archivo nuevo **con el mismo nombre**, el navegador (y la CDN de GitHub Pages) puede seguir sirviendo el antiguo desde caché. Para forzar que todo el mundo vea la versión nueva:
+
+1. Sustituye `assets/img/logo.png` (o `favicon.ico`) por el archivo nuevo, manteniendo el nombre.
+2. Sube el número de versión en todas las páginas, por ejemplo de `?v=1` a `?v=2`:
+   ```
+   sed -i '' 's#logo.png?v=1#logo.png?v=2#g; s#favicon.ico?v=1#favicon.ico?v=2#g' *.html
+   ```
+3. Haz commit y despliega. No hace falta renombrar el archivo ni tocar más referencias.
+
 ## Pendiente antes de producción
 
 - **Logo real**: sustituir `assets/img/logo.svg` y el `<svg class="brand-mark">` inline en cada página (header y footer) por el logotipo definitivo de MCO cuando esté disponible. El mark actual es un placeholder geométrico coherente con la paleta de marca.

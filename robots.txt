@@ -4,4 +4,4 @@ Disallow: /privacidad.html
 Disallow: /cookies.html
 Disallow: /aviso-legal.html
 
-Sitemap: https://mcodigital.com/sitemap.xml
+Sitemap: https://mcodev.site/sitemap.xml
