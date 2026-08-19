@@ -314,7 +314,7 @@ strong { color: var(--ink); font-weight: 600; }
 .service-card .btn-ghost { margin-top: auto; }
 
 /* Proceso diferenciador (mini) */
-.flow-steps { display: flex; align-items: center; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-7); }
+.flow-steps { display: flex; align-items: center; justify-content: center; gap: var(--sp-3); flex-wrap: wrap; margin-top: var(--sp-7); }
 .flow-step {
   display: flex; align-items: center; gap: var(--sp-3);
   background: var(--bg); border: 1px solid var(--border); border-radius: 999px;
