@@ -7,6 +7,20 @@
   "use strict";
 
   /* ---------------------------------------------------------------
+   * Vídeo de fondo del hero: se detiene si el usuario prefiere
+   * menos movimiento, o si la conexión es muy limitada (data saver).
+   * --------------------------------------------------------------- */
+  var heroVideo = document.querySelector("#hero-video");
+  if (heroVideo) {
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var saveData = navigator.connection && navigator.connection.saveData;
+    if (reduceMotion || saveData) {
+      heroVideo.removeAttribute("autoplay");
+      heroVideo.pause();
+    }
+  }
+
+  /* ---------------------------------------------------------------
    * Header: sombra al hacer scroll + menú móvil
    * --------------------------------------------------------------- */
   var header = document.querySelector(".site-header");

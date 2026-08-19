@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://mcodev.site/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/img/favicon.ico?v=3" sizes="any">
-<link rel="stylesheet" href="assets/css/style.css?v=5">
+<link rel="stylesheet" href="assets/css/style.css?v=7">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,33 +59,15 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-grid" aria-hidden="true">
-      <svg class="system-diagram" viewBox="0 0 900 700" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <path class="link" d="M120 560 L300 500 L470 540"/>
-        <path class="link" d="M300 500 L340 360"/>
-        <path class="link" d="M340 360 L520 300 L620 200"/>
-        <path class="link" d="M520 300 L560 460 L720 480"/>
-        <path class="link" d="M620 200 L780 160"/>
-        <path class="link" d="M620 200 L700 320"/>
-        <path class="link" d="M780 160 L860 260"/>
-        <path class="link" d="M470 540 L640 600"/>
-        <path class="link-active" d="M340 360 L520 300"/>
-        <path class="link-active" d="M560 460 L700 320"/>
-        <path class="link-active" d="M300 500 L470 540"/>
-        <rect class="node" x="112" y="552" width="16" height="16" rx="4"/>
-        <rect class="node" x="292" y="492" width="16" height="16" rx="4"/>
-        <rect class="node" x="332" y="352" width="16" height="16" rx="4"/>
-        <rect class="node" x="512" y="292" width="16" height="16" rx="4"/>
-        <rect class="node" x="612" y="192" width="16" height="16" rx="4"/>
-        <rect class="node" x="772" y="152" width="16" height="16" rx="4"/>
-        <rect class="node" x="552" y="452" width="16" height="16" rx="4"/>
-        <rect class="node" x="712" y="472" width="16" height="16" rx="4"/>
-        <rect class="node" x="462" y="532" width="16" height="16" rx="4"/>
-        <rect class="node" x="632" y="592" width="16" height="16" rx="4"/>
-        <circle class="node-dot" cx="700" cy="320" r="5"/>
-        <circle class="node-dot" cx="852" cy="260" r="5"/>
-        <circle class="node-dot" cx="120" cy="560" r="5"/>
-      </svg>
+    <div class="hero-media" aria-hidden="true">
+      <video
+        class="hero-video"
+        id="hero-video"
+        poster="assets/img/hero-poster.jpg?v=1"
+        autoplay muted loop playsinline preload="auto">
+        <source src="assets/img/hero-bg.mp4?v=1" type="video/mp4">
+      </video>
+      <div class="hero-scrim"></div>
     </div>
     <div class="container hero-inner">
       <div class="hero-content">
@@ -428,6 +410,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/main.js?v=4"></script>
 </body>
 </html>
