@@ -496,6 +496,10 @@ strong { color: var(--ink); font-weight: 600; }
   .main-nav a { display: block; width: 100%; padding: var(--sp-4) 0; font-size: 1.15rem; border-bottom: 1px solid var(--border-soft); }
   .main-nav a::after { display: none; }
   .main-nav .nav-cta { display: block; width: 100%; margin-top: var(--sp-5); padding-bottom: var(--sp-6); }
+  .main-nav .nav-cta a {
+    display: flex; width: 100%; justify-content: center; text-align: center;
+    color: #fff; border-bottom: none; padding: .9rem 1.5rem; font-size: 1rem;
+  }
   .nav-toggle { display: flex; }
   .header-actions .btn-primary.header-cta { display: none; }
 
