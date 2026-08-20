@@ -47,7 +47,6 @@ La arquitectura de información y el sistema de diseño (`assets/css/style.css`,
 - **Blog**: nueva carpeta `/blog/` reutilizando header/footer y clases `.section`, `.card`.
 - **Casos de éxito reales**: sustituir progresivamente las cards de "Proyecto conceptual" en `proyectos.html` por proyectos reales con el mismo componente `.project-card`.
 - **Páginas individuales de servicio**: cada servicio ya tiene su propio `id` ancla en `servicios.html` (`#desarrollo-web`, `#automatizacion`, `#inteligencia-artificial`, `#integraciones`); se pueden convertir en páginas propias (`servicios/desarrollo-web.html`, etc.) sin tocar el diseño.
-- **MCO Security**: la nota discreta en el footer (`.footer-security`) está lista para enlazar a la futura web de ciberseguridad cuando exista, sin rediseñar la marca.
 - **Analítica**: añadir el script de analítica (Plausible, GA4, etc.) antes de `</head>` en todas las páginas.
 - **CRM**: el formulario de contacto está estructurado (nombre, empresa, email, servicio, mensaje) para mapear directamente a los campos habituales de un CRM.
 - **Formularios avanzados**: la clase `.field` / `.form-grid` en el CSS soporta añadir campos adicionales (select, checkboxes, subida de archivos) manteniendo el estilo.

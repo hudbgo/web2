@@ -442,16 +442,7 @@ strong { color: var(--ink); font-weight: 600; }
 .footer-col a { font-size: .92rem; color: var(--on-ink-muted); transition: color var(--dur-s) var(--ease); }
 .footer-col a:hover { color: #fff; }
 
-.footer-security {
-  display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); flex-wrap: wrap;
-  padding: var(--sp-6) 0; border-bottom: 1px solid var(--ink-line); margin-top: var(--sp-2);
-}
-.footer-security-note { display: flex; align-items: center; gap: var(--sp-3); font-size: .85rem; color: var(--on-ink-muted); }
-.footer-security-note svg { width: 18px; height: 18px; color: #6b7793; flex-shrink: 0; }
-.footer-security-note strong { color: #c3cbdb; font-weight: 600; }
-.badge-soon { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #6b7793; border: 1px solid var(--ink-line); border-radius: 999px; padding: .25rem .6rem; }
-
-.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); padding: var(--sp-6) 0; font-size: .82rem; flex-wrap: wrap; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); padding: var(--sp-6) 0; font-size: .82rem; flex-wrap: wrap; margin-top: var(--sp-2); border-top: 1px solid var(--ink-line); }
 .footer-legal { display: flex; gap: var(--sp-5); flex-wrap: wrap; }
 .footer-legal a:hover { color: #fff; }
 
