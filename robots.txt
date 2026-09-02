@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /privacidad.html
-Disallow: /cookies.html
-Disallow: /aviso-legal.html
-
-Sitemap: https://mcodev.site/sitemap.xml
