@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://millanandcompany.com/sitemap.xml
+Sitemap: https://mcodev.site/sitemap.xml
