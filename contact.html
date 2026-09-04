@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Solicita tu Presupuesto | M&Co</title>
+  <meta name="description" content="Cuéntanos tu proyecto y te respondemos en menos de 48 horas con un presupuesto para tu página web. Sin compromiso.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="M&Co">
+  <link rel="canonical" href="https://millanandcompany.com/contact.html">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#04070a">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="M&Co">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Contacto — Solicita tu Presupuesto | M&Co">
+  <meta property="og:description" content="Cuéntanos tu proyecto y te respondemos en menos de 48 horas con un presupuesto para tu página web.">
+  <meta property="og:url" content="https://millanandcompany.com/contact.html">
+  <meta property="og:image" content="https://millanandcompany.com/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contacto — Solicita tu Presupuesto | M&Co">
+  <meta name="twitter:description" content="Cuéntanos tu proyecto. Respondemos en menos de 48 horas laborables.">
+  <meta name="twitter:image" content="https://millanandcompany.com/assets/og-cover.jpg">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://millanandcompany.com/index.html" },
+          { "@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://millanandcompany.com/contact.html" }
+        ]
+      },
+      {
+        "@type": "ContactPage",
+        "name": "Contacto — M&Co",
+        "url": "https://millanandcompany.com/contact.html",
+        "about": { "@type": "Organization", "name": "M&Co", "email": "hola@millanandcompany.com" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/page-contact.css">
+</head>
+<body class="page-enter">
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+     ════════════════════════════════════════ -->
+<nav class="nav">
+  <a href="index.html" class="nav__logo">
+    <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" width="150">
+    <span class="nav__logo-dot"></span>
+  </a>
+
+  <button class="nav__hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Velo tras el panel móvil -->
+<div class="nav__scrim"></div>
+
+<!-- Mobile nav -->
+<div class="nav__mobile">
+  <a href="index.html">Inicio</a>
+  <a href="index.html#servicio">Servicio</a>
+  <a href="#formulario" class="nav__cta btn-eval nav__mobile-cta">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+  <span class="nav__mobile-handle"></span>
+</div>
+
+<!-- ════════════════════════════════════════
+     CONTACTO — hero + formulario
+     ════════════════════════════════════════ -->
+<section id="formulario" class="contact-hero">
+  <div class="form-orb-1"></div>
+  <div class="form-orb-2"></div>
+  <div class="container">
+    <div class="t-label hero-animate-1">Contacto</div>
+    <h1 class="t-display-lg hero-animate-2" style="margin-top: 14px; max-width: 640px">
+      Hablemos de<br><em>tu web.</em>
+    </h1>
+    <p class="t-body-xl hero-animate-3 section-intro" style="max-width: 480px; margin-bottom: 64px">
+      Cuéntanos tu proyecto. Respondemos en menos de 48 horas laborables con un presupuesto sin compromiso.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-form-card" data-reveal>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nombre">Nombre completo</label>
+              <input class="form-input" type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="empresa">Empresa o negocio</label>
+              <input class="form-input" type="text" id="empresa" name="empresa" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefono">Teléfono (opcional)</label>
+              <input class="form-input" type="tel" id="telefono" name="telefono">
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0">
+            <label class="form-label" for="mensaje">Cuéntanos tu proyecto</label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" required placeholder="¿A qué se dedica tu negocio? ¿Tienes ya una web o empiezas de cero?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn--lg btn-eval" style="margin-top: 28px">Enviar mensaje</button>
+          <p class="form-hint">Al enviar este formulario aceptas que te contactemos para responder a tu consulta.</p>
+        </form>
+      </div>
+
+      <aside class="contact-info" data-reveal data-delay="150">
+        <div class="contact-info-card">
+          <div class="t-label-muted" style="margin-bottom: 14px">Contacto directo</div>
+          <a href="mailto:hola@millanandcompany.com" class="contact-direct">hola@millanandcompany.com</a>
+        </div>
+        <div class="contact-info-card">
+          <div class="t-label-muted" style="margin-bottom: 14px">Qué pasa después</div>
+          <div class="contact-step"><div class="step-num">1</div><div>Recibimos tu mensaje y lo revisamos</div></div>
+          <div class="contact-step"><div class="step-num">2</div><div>Respondemos en menos de 48h laborables</div></div>
+          <div class="contact-step"><div class="step-num">3</div><div>Reunión inicial sin compromiso</div></div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="footer__logo" style="display:flex; justify-content:center; align-items:center; width:100%;">
+          <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" style="height:70px; width:auto;">
+        </a>
+        <p class="footer__tagline">Creamos páginas web para empresas y autónomos.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Servicio</h4>
+        <ul>
+          <li><a href="index.html#servicio">Página web</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@millanandcompany.com">hola@millanandcompany.com</a></li>
+          <li><a href="#formulario">Presupuesto gratuito</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 M&Co. Creamos páginas web.</span>
+      <span>Diseño · Desarrollo · SEO</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

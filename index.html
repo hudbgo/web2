@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M&Co — Creamos Páginas Web</title>
+  <meta name="description" content="Creamos páginas web para empresas y autónomos: rápidas, cuidadas y pensadas para convertir visitas en clientes. Solicita tu presupuesto sin compromiso.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="M&Co">
+  <link rel="canonical" href="https://millanandcompany.com/index.html">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#04070a">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="M&Co">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="M&Co — Creamos Páginas Web">
+  <meta property="og:description" content="Creamos páginas web para empresas y autónomos: rápidas, cuidadas y pensadas para convertir visitas en clientes.">
+  <meta property="og:url" content="https://millanandcompany.com/index.html">
+  <meta property="og:image" content="https://millanandcompany.com/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="M&Co — Creamos Páginas Web">
+  <meta name="twitter:description" content="Creamos páginas web para empresas y autónomos.">
+  <meta name="twitter:image" content="https://millanandcompany.com/assets/og-cover.jpg">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://millanandcompany.com/#organization",
+        "name": "M&Co",
+        "url": "https://millanandcompany.com/",
+        "logo": "https://millanandcompany.com/assets/logo.png",
+        "image": "https://millanandcompany.com/assets/og-cover.jpg",
+        "description": "Creamos páginas web para empresas y autónomos.",
+        "email": "hola@millanandcompany.com",
+        "areaServed": "ES"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://millanandcompany.com/#website",
+        "url": "https://millanandcompany.com/",
+        "name": "M&Co",
+        "publisher": { "@id": "https://millanandcompany.com/#organization" },
+        "inLanguage": "es-ES"
+      }
+    ]
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/page-index.css">
+</head>
+<body class="page-enter">
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+     ════════════════════════════════════════ -->
+<nav class="nav">
+  <a href="#" class="nav__logo">
+    <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" width="150">
+    <span class="nav__logo-dot"></span>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="#servicio">Servicio</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul>
+
+  <a href="contact.html" class="nav__cta btn-eval">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+
+  <button class="nav__hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Velo tras el panel móvil -->
+<div class="nav__scrim"></div>
+
+<!-- Mobile nav -->
+<div class="nav__mobile">
+  <a href="#servicio">Servicio</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="nav__cta btn-eval nav__mobile-cta">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+  <span class="nav__mobile-handle"></span>
+</div>
+
+<!-- ════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero__bg">
+    <img class="hero__aurora" src="assets/hero-aurora.jpg" alt="">
+    <div class="noise-overlay"></div>
+  </div>
+
+  <div class="container hero__content">
+
+    <h1 class="t-display-xl hero-animate-2" style="max-width: 820px">
+      Creamos<br>
+      páginas <em>web</em>
+    </h1>
+
+    <p class="t-body-xl hero-animate-3" style="max-width: 520px; margin-top: 28px">
+      Webs para empresas y autónomos: rápidas, cuidadas y pensadas para convertir visitas en clientes.
+    </p>
+
+    <div class="flex gap-3 hero-animate-4" style="margin-top: 44px; flex-wrap: wrap">
+      <a href="contact.html" class="btn btn-primary btn--lg btn-eval">
+        Solicitar presupuesto
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SERVICIO
+     ════════════════════════════════════════ -->
+<section id="servicio" class="section">
+  <div class="bg-decor">
+    <img class="bg-swirl" src="assets/swirl.png" alt="" style="width: 320px; top: -40px; right: -60px; opacity: 0.9; --swirl-rot: 10deg;">
+  </div>
+  <div class="container">
+
+    <div class="section-header" data-reveal>
+      <div class="t-label">Servicio</div>
+      <h2 class="t-display-md" style="margin-top: 14px">Página <em>web</em></h2>
+      <p class="t-body-lg section-intro">Diseñamos y desarrollamos tu página web de principio a fin: diseño a medida, adaptada al móvil, optimizada para Google y publicada con tu propio dominio. Tú nos cuentas tu negocio, nosotros nos encargamos del resto.</p>
+      <a href="contact.html" class="btn btn-primary btn--lg btn-eval" style="margin-top: 32px">
+        Quiero mi página web
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CTA FINAL
+     ════════════════════════════════════════ -->
+<section id="cta-final" class="section">
+  <div class="cta-orb-1"></div>
+  <div class="cta-orb-2"></div>
+  <img class="cta-aurora" src="assets/hero-aurora.jpg" alt="">
+  <div class="container" style="text-align: center; max-width: 700px">
+    <div class="t-label" style="color: rgba(255,255,255,0.35); margin-bottom: 20px" data-reveal>Primer paso</div>
+    <h2 data-reveal data-delay="100">Cuéntanos tu proyecto<br><em>sin compromiso.</em></h2>
+    <p data-reveal data-delay="200">Una reunión para entender tu negocio y explicarte qué web necesitas, cuánto costaría y cuándo estaría lista.</p>
+    <div data-reveal data-delay="300">
+      <a href="contact.html" class="btn btn-white btn--lg btn-eval">
+        Solicitar presupuesto gratuito
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </a>
+      <div class="cta-subtext">O escribe directamente a <a href="mailto:hola@millanandcompany.com">hola@millanandcompany.com</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="footer__logo" style="display:flex; justify-content:center; align-items:center; width:100%;">
+          <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" style="height:70px; width:auto;">
+        </a>
+        <p class="footer__tagline">Creamos páginas web para empresas y autónomos.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Servicio</h4>
+        <ul>
+          <li><a href="#servicio">Página web</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@millanandcompany.com">hola@millanandcompany.com</a></li>
+          <li><a href="contact.html">Presupuesto gratuito</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 M&Co. Creamos páginas web.</span>
+      <span>Diseño · Desarrollo · SEO</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
