@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantillas — Empieza con una Base Cuidada | M&Co</title>
+  <meta name="description" content="Plantillas web cuidadas y listas para personalizar con tu marca y tu contenido. La forma más rápida y económica de tener tu web.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="M&Co">
+  <link rel="canonical" href="https://mcodev.site/plantillas.html">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#04070a">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="M&Co">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Plantillas — Empieza con una Base Cuidada | M&Co">
+  <meta property="og:description" content="Plantillas web cuidadas y listas para personalizar con tu marca y tu contenido.">
+  <meta property="og:url" content="https://mcodev.site/plantillas.html">
+  <meta property="og:image" content="https://mcodev.site/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plantillas — M&Co">
+  <meta name="twitter:description" content="Plantillas web listas para personalizar con tu marca.">
+  <meta name="twitter:image" content="https://mcodev.site/assets/og-cover.jpg">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mcodev.site/index.html" },
+          { "@type": "ListItem", "position": 2, "name": "Plantillas", "item": "https://mcodev.site/plantillas.html" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/page-index.css">
+
+  <style>
+    .page-hero { position: relative; overflow: hidden; padding: 176px 0 60px; }
+    .galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .galeria-card {
+      display: flex; flex-direction: column; overflow: hidden;
+      border-radius: var(--r-lg);
+      background: var(--surface); border: 1px solid var(--border);
+      transition: transform 0.3s var(--ease-out), border-color 0.3s;
+    }
+    .galeria-card:hover { transform: translateY(-4px); border-color: var(--border-mid); }
+    .galeria-card__preview {
+      position: relative; aspect-ratio: 16 / 10;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 44px; border-bottom: 1px solid var(--border);
+    }
+    .galeria-card__body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+    .galeria-card__body h4 { font-size: 17px; }
+    .galeria-card__body p { font-size: 14px; color: var(--text-3); line-height: 1.6; flex: 1; }
+    .galeria-card__body .btn { align-self: flex-start; margin-top: 14px; }
+    .prev-1 { background: linear-gradient(135deg, rgba(56,210,198,0.22), rgba(4,7,10,0.6)); }
+    .prev-2 { background: linear-gradient(135deg, rgba(70,227,166,0.2), rgba(4,7,10,0.6)); }
+    .prev-3 { background: linear-gradient(135deg, rgba(120,140,255,0.2), rgba(4,7,10,0.6)); }
+    .prev-4 { background: linear-gradient(135deg, rgba(255,150,110,0.18), rgba(4,7,10,0.6)); }
+    .prev-5 { background: linear-gradient(135deg, rgba(255,210,110,0.16), rgba(4,7,10,0.6)); }
+    .prev-6 { background: linear-gradient(135deg, rgba(200,120,220,0.18), rgba(4,7,10,0.6)); }
+    @media (max-width: 900px) { .galeria { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .page-hero { padding: 132px 0 40px; } .galeria { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body class="page-enter">
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+     ════════════════════════════════════════ -->
+<nav class="nav">
+  <a href="index.html" class="nav__logo">
+    <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" width="150">
+    <span class="nav__logo-dot"></span>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="services.html">Servicios</a></li>
+    <li><a href="ejemplos.html">Ejemplos</a></li>
+    <li><a href="plantillas.html" class="active">Plantillas</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul>
+
+  <a href="contact.html" class="nav__cta btn-eval">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+
+  <button class="nav__hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Velo tras el panel móvil -->
+<div class="nav__scrim"></div>
+
+<!-- Mobile nav -->
+<div class="nav__mobile">
+  <a href="services.html">Servicios</a>
+  <a href="ejemplos.html">Ejemplos</a>
+  <a href="plantillas.html">Plantillas</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="nav__cta btn-eval nav__mobile-cta">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+  <span class="nav__mobile-handle"></span>
+</div>
+
+<!-- ════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="t-label hero-animate-1">Plantillas</div>
+    <h1 class="t-display-lg hero-animate-2" style="margin-top: 14px">
+      Tu web, lista<br>mucho <em>antes.</em>
+    </h1>
+    <p class="t-body-xl hero-animate-3 section-intro" style="max-width: 560px">
+      Bases de diseño cuidadas que personalizamos con tu marca, tus textos y tus fotos. La forma más rápida y económica de tener una web profesional.
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     GALERÍA DE PLANTILLAS
+     ════════════════════════════════════════ -->
+<section class="section" style="padding-top: 40px">
+  <div class="container">
+    <div class="galeria">
+
+      <div class="galeria-card" data-reveal>
+        <div class="galeria-card__preview prev-1">🏢</div>
+        <div class="galeria-card__body">
+          <h4>Corporativa</h4>
+          <p>Para empresas y despachos: quiénes somos, servicios, equipo y contacto. Seria, clara y directa.</p>
+          <a href="contact.html" class="btn btn-ghost btn--sm btn-eval">La quiero →</a>
+        </div>
+      </div>
+
+      <div class="galeria-card" data-reveal data-delay="100">
+        <div class="galeria-card__preview prev-2">⚡</div>
+        <div class="galeria-card__body">
+          <h4>Landing page</h4>
+          <p>Una sola página que lo cuenta todo: qué haces, para quién y un formulario de contacto. Lista en días.</p>
+          <a href="contact.html" class="btn btn-ghost btn--sm btn-eval">La quiero →</a>
+        </div>
+      </div>
+
+      <div class="galeria-card" data-reveal data-delay="200">
+        <div class="galeria-card__preview prev-3">📅</div>
+        <div class="galeria-card__body">
+          <h4>Reservas y citas</h4>
+          <p>Para clínicas, peluquerías y consultas: tus servicios con reserva de cita online integrada.</p>
+          <a href="contact.html" class="btn btn-ghost btn--sm btn-eval">La quiero →</a>
+        </div>
+      </div>
+
+      <div class="galeria-card" data-reveal>
+        <div class="galeria-card__preview prev-4">🛒</div>
+        <div class="galeria-card__body">
+          <h4>Tienda online</h4>
+          <p>Catálogo, carrito y pagos seguros. Empieza a vender online con una base probada y ampliable.</p>
+          <a href="contact.html" class="btn btn-ghost btn--sm btn-eval">La quiero →</a>
+        </div>
+      </div>
+
+      <div class="galeria-card" data-reveal data-delay="100">
+        <div class="galeria-card__preview prev-5">🍽️</div>
+        <div class="galeria-card__body">
+          <h4>Restaurante</h4>
+          <p>Carta, fotos, horarios, cómo llegar y reservas. Pensada para abrir el apetito desde el móvil.</p>
+          <a href="contact.html" class="btn btn-ghost btn--sm btn-eval">La quiero →</a>
+        </div>
+      </div>
+
+      <div class="galeria-card" data-reveal data-delay="200">
+        <div class="galeria-card__preview prev-6">🎨</div>
+        <div class="galeria-card__body">
+          <h4>Portfolio</h4>
+          <p>Para creativos y freelance: galerías rápidas y limpias donde tu trabajo es el protagonista.</p>
+          <a href="contact.html" class="btn btn-ghost btn--sm btn-eval">La quiero →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin-top: 56px" data-reveal>
+      <p class="t-body-lg" style="max-width: 520px; margin: 0 auto 24px">Todas las plantillas se adaptan a tu marca, se publican con tu dominio y pueden crecer hacia una web totalmente a medida.</p>
+      <a href="contact.html" class="btn btn-primary btn--lg btn-eval">
+        Solicitar presupuesto
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="footer__logo" style="display:flex; justify-content:center; align-items:center; width:100%;">
+          <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" style="height:70px; width:auto;">
+        </a>
+        <p class="footer__tagline">Creamos páginas web para empresas y autónomos.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="services.html#marca">Diseño de marca</a></li>
+          <li><a href="services.html#web">Diseño web</a></li>
+          <li><a href="services.html#backend">Desarrollo y backend</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Trabajo</h4>
+        <ul>
+          <li><a href="ejemplos.html">Ejemplos</a></li>
+          <li><a href="plantillas.html">Plantillas</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@mcodev.site">hola@mcodev.site</a></li>
+          <li><a href="contact.html">Presupuesto gratuito</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 M&Co. Creamos páginas web.</span>
+      <span>Marca · Diseño web · Desarrollo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

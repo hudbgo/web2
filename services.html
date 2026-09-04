@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios — Diseño de Marca, Diseño Web y Desarrollo | M&Co</title>
+  <meta name="description" content="Tres servicios para tu negocio: diseño de marca, diseño web y desarrollo y backend. Solicita tu presupuesto sin compromiso.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="M&Co">
+  <link rel="canonical" href="https://mcodev.site/services.html">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#04070a">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="M&Co">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Servicios — Diseño de Marca, Diseño Web y Desarrollo | M&Co">
+  <meta property="og:description" content="Diseño de marca, diseño web y desarrollo y backend. Todo lo que tu negocio necesita online.">
+  <meta property="og:url" content="https://mcodev.site/services.html">
+  <meta property="og:image" content="https://mcodev.site/assets/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Servicios — M&Co">
+  <meta name="twitter:description" content="Diseño de marca, diseño web y desarrollo y backend.">
+  <meta name="twitter:image" content="https://mcodev.site/assets/og-cover.jpg">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mcodev.site/index.html" },
+          { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://mcodev.site/services.html" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": "Diseño de marca",
+        "serviceType": "Identidad visual y branding",
+        "provider": { "@type": "Organization", "name": "M&Co" },
+        "areaServed": "ES",
+        "description": "Logo, colores, tipografías y guía de uso: la identidad visual completa de tu negocio.",
+        "url": "https://mcodev.site/services.html#marca"
+      },
+      {
+        "@type": "Service",
+        "name": "Diseño web",
+        "serviceType": "Diseño de páginas web",
+        "provider": { "@type": "Organization", "name": "M&Co" },
+        "areaServed": "ES",
+        "description": "Páginas web a medida, adaptadas al móvil y pensadas para convertir visitas en clientes.",
+        "url": "https://mcodev.site/services.html#web"
+      },
+      {
+        "@type": "Service",
+        "name": "Desarrollo y backend",
+        "serviceType": "Desarrollo web",
+        "provider": { "@type": "Organization", "name": "M&Co" },
+        "areaServed": "ES",
+        "description": "Formularios, reservas, tiendas online y paneles de gestión: la tecnología detrás de tu web.",
+        "url": "https://mcodev.site/services.html#backend"
+      }
+    ]
+  }
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/page-index.css">
+
+  <style>
+    .page-hero { position: relative; overflow: hidden; padding: 176px 0 80px; }
+    .servicio-bloque { scroll-margin-top: 100px; }
+    .servicio-lista { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+    @media (max-width: 640px) { .page-hero { padding: 132px 0 56px; } }
+  </style>
+</head>
+<body class="page-enter">
+
+<!-- ════════════════════════════════════════
+     NAVIGATION
+     ════════════════════════════════════════ -->
+<nav class="nav">
+  <a href="index.html" class="nav__logo">
+    <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" width="150">
+    <span class="nav__logo-dot"></span>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="services.html" class="active">Servicios</a></li>
+    <li><a href="ejemplos.html">Ejemplos</a></li>
+    <li><a href="plantillas.html">Plantillas</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul>
+
+  <a href="contact.html" class="nav__cta btn-eval">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+
+  <button class="nav__hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Velo tras el panel móvil -->
+<div class="nav__scrim"></div>
+
+<!-- Mobile nav -->
+<div class="nav__mobile">
+  <a href="services.html">Servicios</a>
+  <a href="ejemplos.html">Ejemplos</a>
+  <a href="plantillas.html">Plantillas</a>
+  <a href="contact.html">Contacto</a>
+  <a href="contact.html" class="nav__cta btn-eval nav__mobile-cta">
+    Solicitar presupuesto
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+  </a>
+  <span class="nav__mobile-handle"></span>
+</div>
+
+<!-- ════════════════════════════════════════
+     HERO
+     ════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="t-label hero-animate-1">Servicios</div>
+    <h1 class="t-display-lg hero-animate-2" style="margin-top: 14px">
+      Tres formas de<br>hacer crecer tu <em>negocio.</em>
+    </h1>
+    <p class="t-body-xl hero-animate-3 section-intro" style="max-width: 540px">
+      Puedes contratarlos por separado o juntos: la marca, la web y la tecnología que la mueve por detrás.
+    </p>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     DISEÑO DE MARCA
+     ════════════════════════════════════════ -->
+<section id="marca" class="section servicio-bloque">
+  <div class="bg-decor">
+    <img class="bg-swirl" src="assets/swirl.png" alt="" style="width: 300px; top: -40px; right: -60px; opacity: 0.9; --swirl-rot: 10deg;">
+  </div>
+  <div class="container">
+    <div class="grid-2" data-reveal>
+      <div>
+        <span class="badge badge-green" style="margin-bottom: 16px">Servicio 01</span>
+        <h2 class="t-display-md" style="margin-top: 14px">Diseño<br>de <em>marca</em></h2>
+        <p class="t-body-lg" style="margin-top: 14px; max-width: 440px">La cara de tu negocio. Creamos una identidad visual profesional y coherente que te hace reconocible en la web, en redes sociales y donde haga falta.</p>
+        <a href="contact.html" class="btn btn-primary btn-eval" style="margin-top: 28px">Solicitar presupuesto →</a>
+      </div>
+      <div>
+        <p class="t-body-sm" style="margin-bottom: 12px; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 600; color: var(--ink-4)">Qué incluye</p>
+        <div class="servicio-lista">
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Logo y sus variantes (color, negativo, icono)</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Paleta de colores y tipografías</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Guía de uso de la marca</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Archivos listos para imprenta y digital</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Todo en tu propiedad, en formatos editables</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     DISEÑO WEB
+     ════════════════════════════════════════ -->
+<section id="web" class="section servicio-bloque">
+  <div class="container">
+    <div class="grid-2" data-reveal>
+      <div>
+        <span class="badge badge-blue" style="margin-bottom: 16px">Servicio 02</span>
+        <h2 class="t-display-md" style="margin-top: 14px">Diseño<br><em>web</em></h2>
+        <p class="t-body-lg" style="margin-top: 14px; max-width: 440px">Tu página web a medida, cuidada hasta el último detalle. Diseñada para que se entienda en cinco segundos qué haces y para convertir visitas en clientes.</p>
+        <a href="contact.html" class="btn btn-primary btn-eval" style="margin-top: 28px">Solicitar presupuesto →</a>
+      </div>
+      <div>
+        <p class="t-body-sm" style="margin-bottom: 12px; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 600; color: var(--ink-4)">Qué incluye</p>
+        <div class="servicio-lista">
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Diseño a medida, sin plantillas genéricas</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Adaptada a móvil, tablet y escritorio</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Textos revisados contigo y SEO básico</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Carga rápida y publicación con tu dominio</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Rondas de revisión incluidas: nada avanza sin tu OK</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     DESARROLLO Y BACKEND
+     ════════════════════════════════════════ -->
+<section id="backend" class="section servicio-bloque">
+  <div class="bg-decor">
+    <img class="bg-swirl" src="assets/swirl.png" alt="" style="width: 300px; bottom: -50px; left: -50px; opacity: 0.9; --swirl-rot: 18deg; --swirl-flip: -1;">
+  </div>
+  <div class="container">
+    <div class="grid-2" data-reveal>
+      <div>
+        <span class="badge badge-coral" style="margin-bottom: 16px">Servicio 03</span>
+        <h2 class="t-display-md" style="margin-top: 14px">Desarrollo<br>y <em>backend</em></h2>
+        <p class="t-body-lg" style="margin-top: 14px; max-width: 440px">Cuando tu web necesita hacer cosas, no solo verse bien: reservas, pagos, usuarios, paneles de gestión... Construimos la tecnología que lo mueve todo por detrás.</p>
+        <a href="contact.html" class="btn btn-primary btn-eval" style="margin-top: 28px">Solicitar presupuesto →</a>
+      </div>
+      <div>
+        <p class="t-body-sm" style="margin-bottom: 12px; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 600; color: var(--ink-4)">Qué podemos construir</p>
+        <div class="servicio-lista">
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Formularios y sistemas de reservas o citas</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Tiendas online con pagos seguros</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Áreas de clientes y paneles de gestión</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Integraciones con otras herramientas (email, CRM...)</div></div>
+          <div class="check-row"><div class="check-box done"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div><div>Hosting, copias de seguridad y mantenimiento</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CTA FINAL
+     ════════════════════════════════════════ -->
+<section id="cta-final" class="section">
+  <div class="cta-orb-1"></div>
+  <div class="cta-orb-2"></div>
+  <img class="cta-aurora" src="assets/hero-aurora.jpg" alt="">
+  <div class="container" style="text-align: center; max-width: 700px">
+    <div class="t-label" style="color: rgba(255,255,255,0.35); margin-bottom: 20px" data-reveal>¿No sabes cuál necesitas?</div>
+    <h2 data-reveal data-delay="100">Cuéntanos tu proyecto<br><em>sin compromiso.</em></h2>
+    <p data-reveal data-delay="200">Te decimos qué servicio encaja mejor con tu situación, cuánto costaría y cuándo estaría listo.</p>
+    <div data-reveal data-delay="300">
+      <a href="contact.html" class="btn btn-white btn--lg btn-eval">
+        Solicitar presupuesto gratuito
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2z"/></svg>
+      </a>
+      <div class="cta-subtext">O escribe directamente a <a href="mailto:hola@mcodev.site">hola@mcodev.site</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="footer__logo" style="display:flex; justify-content:center; align-items:center; width:100%;">
+          <img src="./assets/logo.png" alt="M&Co — Creamos páginas web" style="height:70px; width:auto;">
+        </a>
+        <p class="footer__tagline">Creamos páginas web para empresas y autónomos.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#marca">Diseño de marca</a></li>
+          <li><a href="#web">Diseño web</a></li>
+          <li><a href="#backend">Desarrollo y backend</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Trabajo</h4>
+        <ul>
+          <li><a href="ejemplos.html">Ejemplos</a></li>
+          <li><a href="plantillas.html">Plantillas</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@mcodev.site">hola@mcodev.site</a></li>
+          <li><a href="contact.html">Presupuesto gratuito</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 M&Co. Creamos páginas web.</span>
+      <span>Marca · Diseño web · Desarrollo</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
